@@ -4,12 +4,9 @@ public class ArrayLeftRotation {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6, 7};
         int d = 2;
-        //leftRotate(arr, d);
-        System.out.println("Before rotation");
+        leftRotate(arr, d);
         print(arr);
-        System.out.println();
         rotateWithJuggling(arr, d);
-        System.out.println("After rotation");
         print(arr);
 
     }
