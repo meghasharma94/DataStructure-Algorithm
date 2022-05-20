@@ -8,6 +8,9 @@ public class ArrayRotationReversal {
      * B : r
      * Step2 : Reverse A and B => ArBr
      * Step3 : Reverse whole ArBr=>(ArBr)r
+     *
+     * complexity : O(n)
+     *
      **/
 
     public static void main(String[] args) {
