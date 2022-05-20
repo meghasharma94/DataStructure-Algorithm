@@ -4,8 +4,40 @@ public class ArrayLeftRotation {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6, 7};
         int d = 2;
-        leftRotate(arr, d);
+        //leftRotate(arr, d);
+        System.out.println("Before rotation");
+        print(arr);
+        System.out.println();
+        rotateWithJuggling(arr, d);
+        System.out.println("After rotation");
+        print(arr);
 
+    }
+
+    private static void rotateWithJuggling(int[] arr, int d) {
+        int n = arr.length;
+        d = d % n;
+        int gcdVal = gcd(d, n);
+        int temp, i, j, k;
+
+        for (i = 0; i < gcdVal; i++) {
+            temp = arr[i];
+            j = i;
+            while (true) {
+                k = j + d;
+                if (k >= n)
+                    k = k - n;
+                if (k == i)
+                    break;
+                arr[j] = arr[k];
+                j = k;
+            }
+            arr[j] = temp;
+        }
+    }
+
+    private static int gcd(int a, int b) {
+        return b == 0 ? a : gcd(b, a % b);
     }
 
     private static void leftRotate(int[] arr, int d) {
@@ -16,7 +48,7 @@ public class ArrayLeftRotation {
             rotateLeftArray(arr);
         }
         System.out.println("After rotation");
-        print(arr);
+
     }
 
     private static void rotateLeftArray(int[] arr) {
@@ -31,8 +63,6 @@ public class ArrayLeftRotation {
     private static void print(int[] arr) {
         for (int i : arr) {
             System.out.print(i + " ");
-         }
+        }
     }
-
-
 }
