@@ -40,6 +40,7 @@ public class RearrangeArray {
 
         int p = 0, q = p + 1;
 
+
         while (p <= arr.length && q <= (arr.length -1)) {
 
             if (arr[q] < 0) {
