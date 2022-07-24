@@ -79,4 +79,7 @@ class ThereIsNoSpoon {
         // Three coordinates: a node, its right neighbor, its bottom neighbor
         //System.out.println("0 0 1 0 0 1");
     }
+
+
+
 }
