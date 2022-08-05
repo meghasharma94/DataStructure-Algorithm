@@ -1,4 +1,4 @@
-package Arrays.arrangements;
+package arrays.arrangements;
 
 import java.util.Arrays;
 

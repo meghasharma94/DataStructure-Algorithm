@@ -1,4 +1,4 @@
-package Arrays.rotation;
+package arrays.rotation;
 
 /*
  * https://www.geeksforgeeks.org/maximum-sum-iarri-among-rotations-given-array/?ref=lbp

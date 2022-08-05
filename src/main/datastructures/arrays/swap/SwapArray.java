@@ -1,4 +1,4 @@
-package Arrays.swap;
+package arrays.swap;
 
 import java.util.*;
 import java.lang.*;

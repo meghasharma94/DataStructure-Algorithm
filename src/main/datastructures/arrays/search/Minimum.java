@@ -1,6 +1,4 @@
-package Arrays.search;
-
-import Arrays.rotation.MaxSum;
+package arrays.search;
 
 /**
  * Find the minimum element in a sorted and rotated array

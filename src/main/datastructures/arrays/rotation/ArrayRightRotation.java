@@ -1,4 +1,4 @@
-package Arrays.rotation;
+package arrays.rotation;
 
 public class ArrayRightRotation {
     public static void main(String[] args) {
