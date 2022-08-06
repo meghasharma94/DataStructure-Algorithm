@@ -15,11 +15,11 @@ public class HasPath {
         for (int i = 0; i < v; i++) {
             adjList[i] = new LinkedList<>();
         }
-        stack = new Stack<>();
+
     }
 
     public static void main(String[] args) {
-        HasPath g = new HasPath(6);
+        /*HasPath g = new HasPath(6);
         g.addEdge(0, 1);
         g.addEdge(0, 2);
         g.addEdge(1, 0);
@@ -29,9 +29,20 @@ public class HasPath {
         g.addEdge(3, 4);
         g.addEdge(3, 5);
         g.addEdge(4, 3);
-        g.addEdge(5, 3);
+        g.addEdge(5, 3);*/
 
-        System.out.println("The Depth First Traversal has path of the graph is as follows : " + g.hasPath(5, 1));
+        HasPath p = new HasPath(5);
+        p.addEdge(0, 1);
+        p.addEdge(0, 2);
+        p.addEdge(0, 3);
+        p.addEdge(1, 3);
+        p.addEdge(2, 3);
+        p.addEdge(1, 4);
+        p.addEdge(2, 4);
+
+        System.out.println("The Depth First Traversal has path of the graph is as follows : " + p.hasPath(0, 3));
+
+
     }
 
     private boolean hasPath(int src, int dest) {
